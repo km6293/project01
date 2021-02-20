@@ -1,0 +1,185 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*RESET*/
+*{margin:0; padding:0;}
+	ul,ol,dl{list-style:none;}
+	img , video{max-width:100%; border:0;}
+	a{text-decoration:none; color:#333; display:inline-block;}
+	table{border-collapse:collapse; border-spacing:0;}
+	input , select {vertical-align:middle;}
+	html{height:100%;}
+	label{cursor:pointer;}
+	i , em , address{font-style:normal; font-weight:normal;}
+	
+/*슬라이드 몸통 */
+
+.slide{background : gray; text-align:center; position:relative; width: 900px; margin: 0 auto; display: block; height:375px;}
+
+.slide_ul{display: block;}
+.slide_ul>li{position:absolute; top:0; left:0; list-style:none;z-index:10; display: block;}
+.slide_ul>li img{}
+li{list-style: none;}
+
+.show{display:block;}
+
+
+/* 하단 동그라미 버튼 CSS*/
+.slide_btn>li{float: left; margin:0 5px 5px 0;}
+.slide_btn>li>a{display:block; width: 14px; height:14px; background: url(../images/spr.png) -24px -125px; text-indent: -999em; }
+.slide_btn>li>a.active{background-position: 0 -126px;}
+
+.slide_btn{z-index:100; position:absolute; right: 0; bottom:0; }
+
+.slide_btn:after{content:''; display:block; clear:both;}
+.slide_btn{*zoom:1;}
+/*//////////////////////////////--------------------------------------------------------------------------------------------------///*/
+
+/*하단 bottom.jsp-css*/
+#footer-box {
+	position:absolute;
+	left:0;
+	background-color: #e9ecef;
+	width: 100%;
+	height: 190px;
+	text-align: center;
+}
+.clear {
+	clear: both;
+}
+#logo2{
+	
+	color:#000;
+	text-align: center;
+	margin:1% 38%;
+	color: dimgrey;
+	
+}
+#con{
+text-align: center;
+margin: 20px 0 0 0;
+font-size: 10pt;
+color: dimgrey;
+
+}
+#copy1{
+color:dimgrey;
+font-size: 9pt;
+}
+/*//////////////////////////////--------------------------------------------------------------------------------------------------///*/
+
+/*상단 top.jsp-css*/
+   html {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    li {
+        list-style: none;
+    }
+    #mainframe {
+        /*전체프레임 div*/
+      	
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        position: fixed;
+       right: 0;
+       left:0;
+       margin-top: 0;
+       background: #fff;
+       z-index: 999;
+       margin-top:-150px; 
+        
+       
+    }
+
+    #top {
+        /*로그인메뉴와 브랜드사이트 메뉴를 묶어주는 div*/
+        height: 40px;
+        display: inline;
+        
+    }
+
+    #header_brandform {
+        width: 300px;
+        float: left;
+    }
+
+    #header_brandform li {
+        float: left;
+        margin-left: 10px;
+    }
+
+    #header_member {
+        width: 300px;
+        float: right;
+    }
+
+    #header_member li {
+        float: left;
+        margin-left: 10px;
+    }
+
+
+    #mainmenu {
+        /*로고 및 카테고리 묶어주는 전체 div*/
+        width: 1600px;
+        height: 50px;
+        margin: auto;
+        clear: both;
+    }
+    .clear{
+    clear:both;
+    }
+
+
+    #logo {
+        /*cafe traders 로고*/
+        font-family: 'Francois One', sans-serif;/*영어폰트*/
+        width: 300px;
+        height: 48px;
+        text-align: center;
+        font-size: 25pt;
+        color: rgb(7, 96, 195);
+        text-align: center;
+        float: left;
+    }
+
+    #menu {
+        /*커뮤니티 , 스토어, 고객센터 메뉴를 싸고있는 DIV*/
+        float: left;
+        margin: 0 60px;
+
+    }
+
+    #menu ul {
+        margin: 2px;
+        text-align: center;
+    }
+
+    #menu ul li {
+        float: left;
+        margin: 7px 50px;
+        font-size: 18pt;
+        color: rgb(129, 150, 173);
+
+    }
+
+    #search {
+        margin: 20px 50px 0 0;
+    }
+/*--------------------a태그 메뉴속성---------------------*/
+ #menu a:link,#logo a:link { color: rgb(129, 150, 173); text-decoration: none;}
+ #menu a:visited { color:rgb(129, 150, 173); text-decoration: none;}
+ #menu a:hover { transition-duration:0.3s; color: rgb(7,96,195); text-decoration:none;}
+ /*--------------------a태그 로고속성---------------------*/
+ #logo a:hover{color:none; text-decoration: none; }/*마우스오버해도 로고색은 변하지않고 데코도 안들어감*/
+ #logo a:visited  { color:rgb(7,96,195); text-decoration: none;}/*한번 들어갓다 나와도 데코와 색은 변함없음*/
+ 
+ /*----브랜드사이트 및 기업사이트 a태그 속성-----*/
+ #header_brandform a:link {color:#000; text-decoration: none;}
+ #header_brandform a:visited{color:#000; text-decoration: none; }
+ #header_brandform a:hoever{transition-duration:0.3s; color:#000;}
+ 
+  /*----로그인 및 회원가입 a태그 속성-----*/
+ #header_member a:link {color:#000; text-decoration: none;}
+ #header_member a:visited{color:#000; text-decoration: none; }
+ #header_member a:hoever{transition-duration:0.3s; color:#000;}

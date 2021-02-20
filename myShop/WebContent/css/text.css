@@ -1,0 +1,86 @@
+/* Ελ°θ */
+.col-xl-8 {
+	flex: 0 0 66.66667%;
+	max-width: 66.66667%
+}
+
+.col-lg-7 {
+	flex: 0 0 58.33333%;
+	max-width: 58.33333%
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid #e3e6f0;
+	border-radius: .35rem
+}
+
+.shadow {
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important
+}
+
+.mb-4 {
+	margin-bottom: 1.5rem !important
+}
+
+.card-header {
+	padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: #f8f9fc;
+	border-bottom: 1px solid #e3e6f0
+}
+
+.py-3 {
+	padding-top: 1rem !important
+}
+
+.d-flex {
+	display: flex !important
+}
+
+.flex-row {
+	flex-direction: row !important
+}
+
+.align-items-center {
+	align-items: center !important
+}
+
+.card-body {
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 1.25rem
+}
+
+.chart-area {
+	position: relative;
+	height: 10rem;
+	width: 100%
+}	.col-xl-4 {
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%
+	}	.col-lg-5 {
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%
+	}.justify-content-between {
+	justify-content: space-between !important
+}.chart-pie {
+	position: relative;
+	height: 15rem;
+	width: 100%
+}
+.pt-4{
+	padding-top: 1.5rem !important
+}
+.pb-2{
+	padding-bottom: .5rem !important
+}
+.text-center {
+	text-align: center !important
+}
